@@ -5,7 +5,7 @@ public class SpellController : MonoBehaviour
 {
     [SerializeField] private GameObject fireBallPrefab;
     [SerializeField] private GameObject fireBallSpawnPoint;
-    [SerializeField] private float fireBallRadius;
+    [SerializeField] private float spellRadius;
     [SerializeField] private LayerMask targetLayerMask;
     [SerializeField] private float coolDownTime = 1f;
     [SerializeField] private Transform parentTransform;
@@ -14,11 +14,30 @@ public class SpellController : MonoBehaviour
 
     public void CanFire()
     {
-        Collider2D enemy = Physics2D.OverlapCircle(transform.position, fireBallRadius, targetLayerMask);
-
-        if (enemy && canFire)
+        Collider2D[] targets = Physics2D.OverlapCircleAll(transform.position, spellRadius, targetLayerMask);
+        Collider2D target = new Collider2D();
+        
+        if (targets.Length <= 0)
         {
-            fireBallPrefab.GetComponent<Spell>().targetPos = enemy.gameObject;
+            return;    
+        }
+
+        foreach (Collider2D item in targets)
+        {
+            if (item.CompareTag("Enemy") && item.gameObject.GetComponent<EnemyAI>().brainless)
+            {
+                target = item;
+            }            
+
+            if (item.CompareTag("Player"))
+            {
+                target = item;
+            }            
+        }
+
+        if (target && canFire)
+        {
+            fireBallPrefab.GetComponent<Spell>().targetPos = target.gameObject;
             fireBallPrefab.GetComponent<Spell>().directionX = parentTransform.localScale.x;
             GameObject fireBall = Instantiate(fireBallPrefab, fireBallSpawnPoint.transform.position, Quaternion.identity);
             
@@ -36,6 +55,6 @@ public class SpellController : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.DrawWireSphere(transform.position, fireBallRadius);
+        Gizmos.DrawWireSphere(transform.position, spellRadius);
     }
 }
