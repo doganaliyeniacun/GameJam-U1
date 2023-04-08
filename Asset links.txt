@@ -21,4 +21,8 @@ License: https://creativecommons.org/licenses/by/3.0/
 
 ----------------------Sprites------------------------------------------------
 
+Ana karakter
+Artist : Takım üyesi, Berşan Şamlıoğlu
 
+ExportedIcons
+Source: https://penzilla.itch.io/handdrawn-vector-icon-pack
