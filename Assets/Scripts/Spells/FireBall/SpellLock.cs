@@ -20,7 +20,16 @@ public class SpellLock : MonoBehaviour
 
     private void FindTarget()
     {
-        Collider2D target = Physics2D.OverlapCircle(transform.position, spellRadius, targetLayerMask);
+        Collider2D[] targets = Physics2D.OverlapCircleAll(transform.position, spellRadius, targetLayerMask);
+        Collider2D target = new Collider2D();
+
+        foreach (Collider2D item in targets)
+        {
+            if (item.gameObject.GetComponent<EnemyAI>().brainless)
+            {
+                target = item;
+            }            
+        }
 
         if (target)
         {
@@ -49,8 +58,6 @@ public class SpellLock : MonoBehaviour
             rot = Mathf.Atan2(-direction.y, -direction.x) * Mathf.Rad2Deg;
             // print("< 0");
         }
-
-
 
         transform.rotation = Quaternion.Euler(0, 0, rot);
     }

@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1928644993}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.8, y: 1.82, z: 0}
+  m_LocalPosition: {x: -1.83, y: 1.82, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -119,8 +119,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38ece4d7127537741b8e0a9823804425, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireBallRadius: 10
-  enemyLayerMask:
+  spellRadius: 10
+  targetLayerMask:
     serializedVersion: 2
     m_Bits: 256
   parentTransform: {fileID: 1276675819110986824}
@@ -172,10 +172,11 @@ MonoBehaviour:
   fireBallPrefab: {fileID: 2903818231805709170, guid: f8b5431fd589834488ee98ed62ccf6ba, type: 3}
   fireBallSpawnPoint: {fileID: 1928644993}
   fireBallRadius: 10
-  enemyLayerMask:
+  targetLayerMask:
     serializedVersion: 2
     m_Bits: 256
   coolDownTime: 0.5
+  parentTransform: {fileID: 1276675819110986824}
 --- !u!1 &1276675818438515072
 GameObject:
   m_ObjectHideFlags: 0
@@ -226,7 +227,7 @@ GameObject:
   - component: {fileID: 1276675819110986832}
   m_Layer: 7
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -371,7 +372,7 @@ Rigidbody2D:
   m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &1276675819110986827
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -425,7 +426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 10
-  jumpForce: 5
+  jumpForce: 7
   groundLayerMask:
     serializedVersion: 2
     m_Bits: 64

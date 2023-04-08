@@ -23,7 +23,11 @@ public class EnemyAI : MonoBehaviour
     private void FixedUpdate()
     {
         FindAndFollow();
-        spellController.CanFire();
+
+        if (brainless)
+        {
+            spellController.CanFire();
+        }
     }
 
 
@@ -33,12 +37,20 @@ public class EnemyAI : MonoBehaviour
 
         if (player && brainless)
         {
-            enemyAnimation.Move(true);
-
             Vector2 playerPos = player.gameObject.transform.position;
             playerPos.y = transform.position.y;
 
-            rb2.MovePosition(Vector2.MoveTowards(transform.position, playerPos, _moveSpeed * Time.deltaTime));
+            float distance = Vector2.Distance(playerPos, transform.position);
+
+            if (distance >= 5f)
+            {
+                enemyAnimation.Move(true);
+                rb2.MovePosition(Vector2.MoveTowards(transform.position, playerPos, _moveSpeed * Time.deltaTime));
+            }
+            else
+            {
+                enemyAnimation.Move(false);
+            }
 
             Direction(playerPos - (Vector2)transform.position);
         }

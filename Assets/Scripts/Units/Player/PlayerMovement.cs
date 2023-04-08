@@ -15,7 +15,6 @@ public class PlayerMovement : MonoBehaviour
     private PlayerAnimations anim;
     private bool isGrounded;
 
-
     private void Start()
     {
         rb2 = GetComponent<Rigidbody2D>();
@@ -43,16 +42,17 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isGrounded)
         {
-            rb2.velocity = new Vector2(rb2.velocity.x, jumpForce);
+            rb2.AddForce(new Vector2(rb2.velocity.x, jumpForce), ForceMode2D.Impulse);
             anim.Jump();
         }
     }
 
     private void CanMove(Vector2 input, float moveSpeed)
     {
+        rb2.velocity = new Vector2(moveInput.x * moveSpeed, rb2.velocity.y);
+
         if (isGrounded)
         {
-            rb2.velocity = new Vector2(moveInput.x * moveSpeed, rb2.velocity.y);
             anim.Move(Mathf.Abs(input.x));
         }
     }

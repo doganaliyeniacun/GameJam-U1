@@ -57,6 +57,8 @@ public class Spell : MonoBehaviour
 
     private void FindAndFollow()
     {
+        
+
         Vector3 direction = targetPos.transform.position - transform.position;
         rb2.velocity = new Vector2(direction.x, direction.y).normalized * moveSpeed;
 
@@ -74,6 +76,7 @@ public class Spell : MonoBehaviour
 
         if (other.CompareTag("Player") && isEnemySpell)
         {
+            other.GetComponent<PlayerBrainController>().TakeDamage(spellDamage);
             Explosive();
         }
     }
