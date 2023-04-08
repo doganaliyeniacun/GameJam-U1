@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private PlayerMovement playerMovement;
-    [SerializeField] private FireBallController fireBallController; 
+    [SerializeField] private SpellController spellController; 
     
     private void OnMove(InputValue inputValue)
     {
@@ -17,8 +17,8 @@ public class PlayerController : MonoBehaviour
         playerMovement.Jump();
     }
 
-    private void OnFireBall()
+    private void OnFire()
     {
-        fireBallController.CanFire();
+        spellController.CanFire();
     }
 }
