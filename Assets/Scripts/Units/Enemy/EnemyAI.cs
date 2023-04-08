@@ -7,6 +7,7 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private float radius = 5f;
     [SerializeField] private LayerMask playerLayerMask;
     [SerializeField] private float _moveSpeed = 5f;
+    [SerializeField] private SpellController spellController;
 
     public bool brainless = true;
 
@@ -22,7 +23,9 @@ public class EnemyAI : MonoBehaviour
     private void FixedUpdate()
     {
         FindAndFollow();
+        spellController.CanFire();
     }
+
 
     private void FindAndFollow()
     {

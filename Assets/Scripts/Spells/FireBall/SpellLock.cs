@@ -1,14 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SpellLock : MonoBehaviour
 {
-    [SerializeField] private float fireBallRadius = 10f;
-    [SerializeField] private LayerMask enemyLayerMask;
+    [SerializeField] private float spellRadius = 10f;
+    [SerializeField] private LayerMask targetLayerMask;
     [SerializeField] private Transform parentTransform;
 
-    private GameObject enemyPos;
+    private GameObject targetPos;
 
     private void FixedUpdate()
     {
@@ -22,28 +20,28 @@ public class SpellLock : MonoBehaviour
 
     private void FindTarget()
     {
-        Collider2D enemy = Physics2D.OverlapCircle(transform.position, fireBallRadius, enemyLayerMask);
+        Collider2D target = Physics2D.OverlapCircle(transform.position, spellRadius, targetLayerMask);
 
-        if (enemy)
+        if (target)
         {
-            enemyPos = enemy.gameObject;
+            targetPos = target.gameObject;
         }
     }
 
     private void LockTarget()
     {
-        if (!enemyPos)
+        if (!targetPos)
         {
             return;
         }
 
-        Vector3 direction = enemyPos.transform.position - transform.position;
+        Vector3 direction = targetPos.transform.position - transform.position;
 
         float rot = 0;
 
         if (parentTransform.localScale.x > 0)
         {
-            rot = Mathf.Atan2(direction.y + 2, direction.x) * Mathf.Rad2Deg;
+            rot = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             // print("> 0");
         }
         else if (parentTransform.localScale.x < 0)
