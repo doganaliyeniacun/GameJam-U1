@@ -16,7 +16,7 @@ public class PlayerAnimations : MonoBehaviour
 
     public void Jump()
     {
-        anim.SetTrigger("Jump");
+        //anim.SetTrigger("Jump");
     }
 
     public void GroundCheck(bool check)
