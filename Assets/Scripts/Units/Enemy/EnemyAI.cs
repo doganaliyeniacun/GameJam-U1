@@ -26,7 +26,6 @@ public class EnemyAI : MonoBehaviour
     {
         Collider2D player = Physics2D.OverlapCircle(transform.position, radius, playerLayerMask);
 
-
         if (player)
         {
             enemyAnimation.Move(true);
@@ -42,8 +41,6 @@ public class EnemyAI : MonoBehaviour
         {
             enemyAnimation.Move(false);
         }
-
-
     }
 
     private void Direction(Vector2 direction)
