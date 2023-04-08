@@ -44,12 +44,12 @@ public class SpellLock : MonoBehaviour
         if (parentTransform.localScale.x > 0)
         {
             rot = Mathf.Atan2(direction.y + 2, direction.x) * Mathf.Rad2Deg;
-            print("> 0");
+            // print("> 0");
         }
         else if (parentTransform.localScale.x < 0)
         {
             rot = Mathf.Atan2(-direction.y, -direction.x) * Mathf.Rad2Deg;
-            print("< 0");
+            // print("< 0");
         }
 
 

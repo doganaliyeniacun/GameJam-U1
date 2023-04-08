@@ -8,6 +8,8 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private LayerMask playerLayerMask;
     [SerializeField] private float _moveSpeed = 5f;
 
+    public bool brainless = true;
+
     private Rigidbody2D rb2;
     private EnemyAnimation enemyAnimation;
 
@@ -26,7 +28,7 @@ public class EnemyAI : MonoBehaviour
     {
         Collider2D player = Physics2D.OverlapCircle(transform.position, radius, playerLayerMask);
 
-        if (player)
+        if (player && brainless)
         {
             enemyAnimation.Move(true);
 

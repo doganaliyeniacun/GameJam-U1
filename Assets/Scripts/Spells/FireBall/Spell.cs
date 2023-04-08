@@ -4,6 +4,7 @@ public class Spell : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float rotationAngle = -90f;
+    [SerializeField] private float spellDamage = 25f;
 
     [HideInInspector]
     public GameObject enemyPos;
@@ -34,6 +35,11 @@ public class Spell : MonoBehaviour
     {
         if (other.CompareTag("Enemy") || other.CompareTag("Ground"))
         {
+            if (other.CompareTag("Enemy"))
+            {
+                other.GetComponent<BrainController>().TakeDamage(spellDamage);    
+            }
+
             Explosive();
         }
     }
