@@ -22,17 +22,16 @@ public class PlayerBrainController : MonoBehaviour
     {
         if (0f >= currentBrainHealth)
         {
-            print("player die");
+            GameController.instance.RestartScene();
         }
     }
 
     public void TakeDamage(float damage)
     {
-
         currentBrainHealth -= damage;
         UpdateBrainBar(maxBrainHealth, currentBrainHealth);
-
     }
+    
     private void UpdateBrainBar(float maxBrain, float currentBrain)
     {
         brainbarSprite.DOFillAmount(currentBrain / maxBrain, 1);

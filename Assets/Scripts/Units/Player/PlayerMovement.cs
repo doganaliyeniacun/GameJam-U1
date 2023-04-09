@@ -43,7 +43,7 @@ public class PlayerMovement : MonoBehaviour
         if (isGrounded)
         {
             rb2.AddForce(new Vector2(rb2.velocity.x, jumpForce), ForceMode2D.Impulse);
-            AudioManager.Instance.PlaySFX("Jump");
+            AudioManager.instance.PlaySFX("Jump");
             anim.Jump();
 
         }

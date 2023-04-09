@@ -10,21 +10,21 @@ public class AudioUIController : MonoBehaviour
             sfxSlider;
     public void ToggleMusic()
     {
-        AudioManager.Instance.ToggleMusic();
+        AudioManager.instance.ToggleMusic();
     }
 
     public void ToggleSFX()
     {
-        AudioManager.Instance.ToggleSFX();
+        AudioManager.instance.ToggleSFX();
     }
 
     public void MusicVolume()
     {
-        AudioManager.Instance.MusicVolume(musicSlider.value);
+        AudioManager.instance.MusicVolume(musicSlider.value);
     }
 
     public void SFXVolume()
     {
-        AudioManager.Instance.SFXVolume(sfxSlider.value);
+        AudioManager.instance.SFXVolume(sfxSlider.value);
     }
 }
