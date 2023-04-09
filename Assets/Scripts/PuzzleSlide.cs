@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -8,12 +5,13 @@ public class PuzzleSlide : MonoBehaviour
 {
 
     [SerializeField] private Transform emptySpace;
-    private Camera _camera;
+    public Camera _camera;
     [SerializeField] private TileScript[] tiles;
+
 
     private void Start()
     {
-        _camera = Camera.main;
+        // _camera = Camera.main;
         Shuffle();
     }
 
@@ -26,7 +24,7 @@ public class PuzzleSlide : MonoBehaviour
             RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction);
             if (hit)
             {
-                if (Vector2.Distance(emptySpace.position, hit.transform.position)< 3f)
+                if (Vector2.Distance(emptySpace.position, hit.transform.position) < 3f)
                 {
                     Vector2 lastEmptySpacePosition = emptySpace.position;
                     TileScript thisTile = hit.transform.GetComponent<TileScript>();
@@ -34,6 +32,27 @@ public class PuzzleSlide : MonoBehaviour
                     thisTile.targetPosition = lastEmptySpacePosition;
                 }
             }
+        }
+
+        int correctTiles = 0;
+        foreach (TileScript item in tiles)
+        {
+            if (item != null)
+            {
+                if (item.inRightPlace)
+                {
+                    correctTiles++;
+                }
+            }
+        }
+
+        // print("correctTiles : " + correctTiles);
+
+        if (correctTiles == tiles.Length - 1)
+        {
+            gameObject.SetActive(false);
+            GameController.instance.NextScene(1);
+            print("YouWin");
         }
     }
 
@@ -51,7 +70,7 @@ public class PuzzleSlide : MonoBehaviour
                 tiles[i] = tiles[randomIndex];
                 tiles[randomIndex] = tile;
 
-            } 
+            }
         }
     }
 }

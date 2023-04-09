@@ -10,6 +10,8 @@ public class TileScript : MonoBehaviour
     private SpriteRenderer sprite;
     private int targetCount = 0;
     private bool checkActiveButton = true;
+    public  bool inRightPlace;
+
     void Awake()
     {
         targetPosition = transform.position;
@@ -26,32 +28,16 @@ public class TileScript : MonoBehaviour
             if (targetPosition == correctPosition)
             {
                 sprite.color = Color.green;
-                targetCount++;
+                inRightPlace = true;
             }
             else
             {
-                sprite.color = Color.red;
-                targetCount--;
+                sprite.color = Color.red;     
+                inRightPlace = false;           
             }
 
-            if (checkActiveButton)
-            {
-                  Invoke("activateButton",3.0f);
-            }
 
-         Debug.Log(targetCount.ToString());
             
     }
-
-    public void activateButton()
-    {
-         if (targetCount==8)
-         {
-             checkActiveButton = false;
-             Debug.Log("aktifleşti");
-         }
-                    
-    }
-
    
 }
