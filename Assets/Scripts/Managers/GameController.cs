@@ -28,4 +28,9 @@ public class GameController : MonoBehaviour
     {       
         SceneManager.LoadScene(0);
     }
+
+    public void NextScene(int sceneIndex)
+    {
+        SceneManager.LoadScene(sceneIndex);
+    }
 }
