@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.SceneManagement;
 
 public class StoryController : MonoBehaviour
 {
@@ -23,7 +24,7 @@ public class StoryController : MonoBehaviour
 
     private void Update()
     {
-        if (prefab!= null && Input.GetMouseButtonDown(0))
+        if (prefab != null && Input.GetMouseButtonDown(0))
         {
             DestroyImg();
         }
@@ -45,23 +46,29 @@ public class StoryController : MonoBehaviour
     }
 
     public void DestroyImg()
-    {
-        Destroy(prefab);
+    {        
         imageCounter++;
         if (imageCounter != imgList.Count)
         {
+            DestroyStory();
             SpawnImg(imageCounter);
         }
         else
         {
             FinalScene();
+            Invoke(nameof(DestroyStory), 0.5f);
         }
     }
 
     public void FinalScene()
     {
-        Debug.Log("Sahne Başlar.");
+        SceneManager.LoadScene(1, LoadSceneMode.Additive);
     }
-    
-    
+
+    private void DestroyStory()
+    {
+        Destroy(prefab);
+    }
+
+
 }

@@ -302,6 +302,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2722829375153503541, guid: f86bf64f974520b41b8db87888704585, type: 3}
+      propertyPath: sfxSlider
+      value: 
+      objectReference: {fileID: 1715699827}
+    - target: {fileID: 2722829375153503541, guid: f86bf64f974520b41b8db87888704585, type: 3}
+      propertyPath: musicSlider
+      value: 
+      objectReference: {fileID: 395623626}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f86bf64f974520b41b8db87888704585, type: 3}
 --- !u!1001 &222533084
@@ -505,6 +513,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+--- !u!114 &395623626 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4852524548498025037, guid: 4ab306bb833dd4c409fe2570230cce41, type: 3}
+  m_PrefabInstance: {fileID: 1888619670}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &436164055
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -597,17 +616,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &537320126 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6809298892609607470, guid: f86bf64f974520b41b8db87888704585, type: 3}
-  m_PrefabInstance: {fileID: 176302532}
+--- !u!1 &620930252
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4488fd43666d254aab491636b613a8a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 620930253}
+  m_Layer: 0
+  m_Name: StoryManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &620930253
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 620930252}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &758907844
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30585,6 +30624,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1715699827 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4852524548483052248, guid: 4ab306bb833dd4c409fe2570230cce41, type: 3}
+  m_PrefabInstance: {fileID: 1888619670}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1821081420
 GameObject:
   m_ObjectHideFlags: 0
@@ -30825,8 +30875,27 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4852524548483052248, guid: 4ab306bb833dd4c409fe2570230cce41, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1932793654}
+    - target: {fileID: 4852524548498025037, guid: 4ab306bb833dd4c409fe2570230cce41, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1932793654}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ab306bb833dd4c409fe2570230cce41, type: 3}
+--- !u!114 &1932793654 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2722829375153503541, guid: f86bf64f974520b41b8db87888704585, type: 3}
+  m_PrefabInstance: {fileID: 176302532}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d75e208eb4a3ddc46a48ba5bec1bdcd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1986562188
 GameObject:
   m_ObjectHideFlags: 0
@@ -30911,14 +30980,26 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 537320126}
-        m_TargetAssemblyTypeName: GameController, Assembly-CSharp
+      - m_Target: {fileID: 5706897604735670550}
+        m_TargetAssemblyTypeName: PuzzleSlide, Assembly-CSharp
         m_MethodName: NextScene
-        m_Mode: 3
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5706897604735670549}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0

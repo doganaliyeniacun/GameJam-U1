@@ -51,7 +51,7 @@ public class PuzzleSlide : MonoBehaviour
         if (correctTiles == tiles.Length - 1)
         {
             gameObject.SetActive(false);
-            GameController.instance.NextScene(1);
+            GameController.instance.NextScene(2);
             print("YouWin");
         }
     }
@@ -72,5 +72,10 @@ public class PuzzleSlide : MonoBehaviour
 
             }
         }
+    }
+
+    public void NextScene()
+    {
+        GameController.instance.NextScene(2);
     }
 }
