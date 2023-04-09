@@ -20,11 +20,11 @@ public class AudioManager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad (gameObject);
+            DontDestroyOnLoad(gameObject.transform.root.gameObject);
         }
         else
         {
-            Destroy (gameObject);
+            Destroy(gameObject);
         }
     }
 

@@ -6,12 +6,12 @@ public class GameController : MonoBehaviour
 {
     public static GameController instance;
 
-    private void Start()
+    private void Awake()
     {
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(gameObject);
+            DontDestroyOnLoad(gameObject.transform.root.gameObject);
         }
         else
         {
