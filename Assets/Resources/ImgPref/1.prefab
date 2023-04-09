@@ -35,7 +35,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.12414659}
   m_AnchorMax: {x: 0.5, y: 0.12414659}
-  m_AnchoredPosition: {x: -37.9792, y: 37}
+  m_AnchoredPosition: {x: -37.9792, y: -25}
   m_SizeDelta: {x: 725.3794, y: 116.4637}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3079642345632207684
@@ -66,9 +66,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Atand\u0131\u011F\u0131 yeni akademide ilk g\xFCn\xFC i\xE7in \xE7ok heyecanl\u0131
-    idi X. Kap\u0131dan i\xE7eri ad\u0131m\u0131n\u0131 atarken kalbi seri bir \u015Fekilde
-    at\u0131yordu."
+  m_text: "Mahmut hoca, atand\u0131\u011F\u0131 yeni akademide, ilk g\xFCn\xFC i\xE7in
+    \xE7ok heyecanl\u0131yd\u0131. Kap\u0131dan i\xE7eri ad\u0131m\u0131n\u0131 atarken
+    kalbi k\u0131p\u0131r k\u0131p\u0131r at\u0131yordu."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -95,8 +95,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -131,7 +131,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -263.02908, y: 0, z: -314.76312, w: -35.820908}
+  m_margin: {x: -247.96707, y: 0, z: -302.71344, w: -35.820908}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -204,8 +204,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -25, y: 96}
-  m_SizeDelta: {x: 130.8922, y: 162.5618}
+  m_AnchoredPosition: {x: -0.015203, y: 122.1842}
+  m_SizeDelta: {x: 124.56, y: 159.8312}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3079642347095002907
 CanvasRenderer:

@@ -67,7 +67,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.12414659}
   m_AnchorMax: {x: 0.5, y: 0.12414659}
-  m_AnchoredPosition: {x: -13, y: 8}
+  m_AnchoredPosition: {x: -13, y: -35}
   m_SizeDelta: {x: 293.43, y: 84.132}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8750028545223315370
@@ -98,8 +98,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Bu garipliklerin arkas\u0131ndaki sis perdesini aralamak isteyen X ilk
-    i\u015Fine ba\u015Fl\u0131yordu.."
+  m_text: "\"Okuldaki \xF6\u011Frenciler resmen telefon ba\u011F\u0131ml\u0131s\u0131
+    olmu\u015F, onlar\u0131 bu durumdan kurtarmak benim i\u015Fim. Bunu yapabilirim.\""
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -126,8 +126,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -201,10 +201,10 @@ RectTransform:
   m_Father: {fileID: 8750028546237716712}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6.0428, y: 68.0908}
-  m_SizeDelta: {x: 109.5421, y: 137.2525}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 479.99, y: -186.4041}
+  m_SizeDelta: {x: -879.24, y: -415.4658}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8750028545489270494
 CanvasRenderer:
