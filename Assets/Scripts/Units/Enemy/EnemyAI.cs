@@ -28,6 +28,10 @@ public class EnemyAI : MonoBehaviour
         {
             spellController.CanFire();
         }
+        else
+        {
+            enemyAnimation.Die();
+        }
     }
 
 

@@ -482,22 +482,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 831939090}
     m_Modifications:
-    - target: {fileID: 4485334562019126529, guid: 6509c45d367900e4ea6363a72de75ebc, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4485334562019126530, guid: 6509c45d367900e4ea6363a72de75ebc, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4485334562019126531, guid: 6509c45d367900e4ea6363a72de75ebc, type: 3}
-      propertyPath: m_Constraints
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4485334562019126531, guid: 6509c45d367900e4ea6363a72de75ebc, type: 3}
-      propertyPath: m_GravityScale
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4485334562019126533, guid: 6509c45d367900e4ea6363a72de75ebc, type: 3}
       propertyPath: m_Name
       value: Enemy
@@ -512,7 +496,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4485334562019126590, guid: 6509c45d367900e4ea6363a72de75ebc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.13
+      value: 1.04
       objectReference: {fileID: 0}
     - target: {fileID: 4485334562019126590, guid: 6509c45d367900e4ea6363a72de75ebc, type: 3}
       propertyPath: m_LocalPosition.z
@@ -13059,6 +13043,10 @@ PrefabInstance:
     - target: {fileID: 1276675819110986831, guid: 1b05211b1e613254392ac4525a175a1a, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276675819110986839, guid: 1b05211b1e613254392ac4525a175a1a, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b05211b1e613254392ac4525a175a1a, type: 3}

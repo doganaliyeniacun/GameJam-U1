@@ -13,4 +13,9 @@ public class EnemyAnimation : MonoBehaviour
     {
         anim.SetBool("Move", checkMove);
     }
+
+    public void Die()
+    {
+        anim.SetTrigger("Die");
+    }
 }

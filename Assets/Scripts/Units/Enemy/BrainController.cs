@@ -6,7 +6,7 @@ public class BrainController : MonoBehaviour
 {
     [SerializeField] private Image brainbarSprite;
     [SerializeField] private float maxBrainHealth;
-    [SerializeField] private EnemyAI enemyAI; 
+    [SerializeField] private EnemyAI enemyAI;
     private float currentBrainHealth;
 
     private void Start()
@@ -21,7 +21,7 @@ public class BrainController : MonoBehaviour
 
         if (maxBrainHealth == currentBrainHealth)
         {
-            enemyAI.brainless = false;
+            enemyAI.brainless = false;            
         }
     }
 
