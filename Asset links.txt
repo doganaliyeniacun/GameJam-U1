@@ -2,15 +2,16 @@
 ------------------------Audio------------------------------------------------
 Music: Voyager by whatfunk
 Source: https://soundcloud.com/whatfunk/voyager
-License: http://creativecommons.org/licenses/by/3.0/
-Get music free for a link from https://starfrosch.com
 
 
 -Jump- 
 Music: 456372__felixyadomi__hop3
 Source: https://freesound.org/people/felixyadomi/sounds/456372/
-License: https://creativecommons.org/licenses/by/3.0/
 
+
+-CoinCollectable-
+Music: coinCollectable
+Source: https://freesound.org/people/ProjectsU012/sounds/341695/
 
 
 

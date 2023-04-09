@@ -7,8 +7,8 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/Level.unity
-    guid: ebe2c0795959a034599fddb0e0f99c9d
+    guid: a672c1d9311e6dc43a6285d8030a0aad
   - enabled: 1
-    path: Assets/Scenes/TestScene.unity
-    guid: 72b68c81e288b7747b3316063e8785a8
+    path: Assets/Scenes/Combat.unity
+    guid: cc1964f1bf1e8164cae50025fea0123b
   m_configObjects: {}

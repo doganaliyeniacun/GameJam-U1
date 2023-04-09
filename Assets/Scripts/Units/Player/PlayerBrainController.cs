@@ -23,6 +23,7 @@ public class PlayerBrainController : MonoBehaviour
         if (0f >= currentBrainHealth)
         {
             GameController.instance.RestartScene();
+            PenCollection.instance.count = 0;
         }
     }
 
