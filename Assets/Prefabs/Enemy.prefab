@@ -154,7 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireBallPrefab: {fileID: 8531215970733664509, guid: 41ae9c330f5b6604f9adc28e68999fbb, type: 3}
   fireBallSpawnPoint: {fileID: 778213312}
-  fireBallRadius: 10
+  spellRadius: 10
   targetLayerMask:
     serializedVersion: 2
     m_Bits: 128

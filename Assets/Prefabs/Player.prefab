@@ -75,15 +75,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 46e5fedd059492647a53251b7facaa8e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.7777778, y: 0.875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!95 &436366411
@@ -94,7 +94,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1928644993}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: eb72540798825214892bf4e0dd469b4b, type: 2}
   m_CullingMode: 0
@@ -171,7 +171,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireBallPrefab: {fileID: 2903818231805709170, guid: f8b5431fd589834488ee98ed62ccf6ba, type: 3}
   fireBallSpawnPoint: {fileID: 1928644993}
-  fireBallRadius: 10
+  spellRadius: 10
   targetLayerMask:
     serializedVersion: 2
     m_Bits: 256
@@ -201,7 +201,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1276675818438515072}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.096, y: -0.978, z: 0}
+  m_LocalPosition: {x: 0.096, y: -1.23, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -225,6 +225,7 @@ GameObject:
   - component: {fileID: 1276675819110986826}
   - component: {fileID: 1276675819110986825}
   - component: {fileID: 1276675819110986832}
+  - component: {fileID: 1165463989}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -289,8 +290,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 355494448, guid: b2e6afa8bf582a8458d151e1474748f2, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: 71e98d4c8efd7ec49b10dda344fbf455, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -382,22 +383,22 @@ BoxCollider2D:
   m_GameObject: {fileID: 1276675819110986831}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: f86c6c08688540b4db5136229d4c630f, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.013776302, y: -0.004831791}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.2142857, y: 2.0714285}
+    oldSize: {x: 2, y: 2.9642856}
     newSize: {x: 0.4722222, y: 0.8055556}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.2142857, y: 2.0714285}
+  m_Size: {x: 0.8285551, y: 2.4898405}
   m_EdgeRadius: 0
 --- !u!114 &1276675819110986826
 MonoBehaviour:
@@ -444,3 +445,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c845f71a2dbadf74e928d595c35eb83f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1165463989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276675819110986831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dc7da2285618ee449573bc240fa0b9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  brainbarSprite: {fileID: 0}
+  maxBrainHealth: 100

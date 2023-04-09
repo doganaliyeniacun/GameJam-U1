@@ -2170,11 +2170,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919831118}
   m_CullTransparentMesh: 1
---- !u!1 &984240194 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1276675819110986831, guid: 1b05211b1e613254392ac4525a175a1a, type: 3}
-  m_PrefabInstance: {fileID: 1276675820228142564}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1035569249
 GameObject:
   m_ObjectHideFlags: 0
@@ -2515,20 +2510,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1276675819110986824, guid: 1b05211b1e613254392ac4525a175a1a, type: 3}
   m_PrefabInstance: {fileID: 1276675820228142564}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1165463989
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 984240194}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dc7da2285618ee449573bc240fa0b9b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  brainbarSprite: {fileID: 239187910}
-  maxBrainHealth: 100
 --- !u!1 &1216015713
 GameObject:
   m_ObjectHideFlags: 0
@@ -3409,14 +3390,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1599813071}
     m_Modifications:
-    - target: {fileID: 2081148912, guid: 1b05211b1e613254392ac4525a175a1a, type: 3}
-      propertyPath: spellRadius
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1276675818438515073, guid: 1b05211b1e613254392ac4525a175a1a, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.23
-      objectReference: {fileID: 0}
+    - target: {fileID: 1165463989, guid: 1b05211b1e613254392ac4525a175a1a, type: 3}
+      propertyPath: brainbarSprite
+      value: 
+      objectReference: {fileID: 239187910}
     - target: {fileID: 1276675819110986824, guid: 1b05211b1e613254392ac4525a175a1a, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -3461,34 +3438,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1276675819110986827, guid: 1b05211b1e613254392ac4525a175a1a, type: 3}
-      propertyPath: m_Size.y
-      value: 2.2854662
-      objectReference: {fileID: 0}
-    - target: {fileID: 1276675819110986827, guid: 1b05211b1e613254392ac4525a175a1a, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 6200000, guid: f86c6c08688540b4db5136229d4c630f, type: 2}
-    - target: {fileID: 1276675819110986827, guid: 1b05211b1e613254392ac4525a175a1a, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.10701895
-      objectReference: {fileID: 0}
-    - target: {fileID: 1276675819110986827, guid: 1b05211b1e613254392ac4525a175a1a, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1276675819110986827, guid: 1b05211b1e613254392ac4525a175a1a, type: 3}
-      propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 2.9642856
-      objectReference: {fileID: 0}
     - target: {fileID: 1276675819110986831, guid: 1b05211b1e613254392ac4525a175a1a, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 1276675819110986839, guid: 1b05211b1e613254392ac4525a175a1a, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 71e98d4c8efd7ec49b10dda344fbf455, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b05211b1e613254392ac4525a175a1a, type: 3}
 --- !u!1001 &4485334563425941598
@@ -3498,10 +3451,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1599813071}
     m_Modifications:
-    - target: {fileID: 1148069844, guid: 6509c45d367900e4ea6363a72de75ebc, type: 3}
-      propertyPath: spellRadius
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 4485334562019126533, guid: 6509c45d367900e4ea6363a72de75ebc, type: 3}
       propertyPath: m_Name
       value: Enemy
