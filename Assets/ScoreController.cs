@@ -20,9 +20,14 @@ public class ScoreController : MonoBehaviour
         }
     }
 
+    void Update()
+    {
+        _text.text = ": " + count.ToString();
+    }
+
     public void IncrementScore()
     {
         count++;
-        _text.text = ": " + count.ToString();
+        
     }
 }

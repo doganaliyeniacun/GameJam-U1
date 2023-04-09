@@ -25,8 +25,9 @@ public class GameController : MonoBehaviour
     }
 
     public void RestartScene()
-    {       
-        SceneManager.LoadScene(0);
+    {
+        SceneManager.LoadScene(0); 
+        ScoreController.instance.count = 0;
     }
 
     public void NextScene(int sceneIndex)

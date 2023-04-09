@@ -23,16 +23,16 @@ public class PlayerBrainController : MonoBehaviour
         if (0f >= currentBrainHealth)
         {
             GameController.instance.RestartScene();
-            ScoreController.instance.count = 0;
         }
     }
 
     public void TakeDamage(float damage)
     {
+
         currentBrainHealth -= damage;
         UpdateBrainBar(maxBrainHealth, currentBrainHealth);
+
     }
-    
     private void UpdateBrainBar(float maxBrain, float currentBrain)
     {
         brainbarSprite.DOFillAmount(currentBrain / maxBrain, 1);
