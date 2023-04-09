@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 46e5fedd059492647a53251b7facaa8e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7567f6d1a1905e64cae2cc5e91a8531b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -163,5 +163,5 @@ MonoBehaviour:
   spellDamage: 25
   followTarget: 1
   isEnemySpell: 0
-  directionX: 1
+  directionX: -1
   targetPos: {fileID: 0}
