@@ -24,8 +24,6 @@ public class PlayerBrainController : MonoBehaviour
     {
         if (0f >= currentBrainHealth)
         {
-            
-
             if (gameoverImg != null)
             {
                 gameoverImg.SetActive(true);
@@ -38,8 +36,6 @@ public class PlayerBrainController : MonoBehaviour
                 Time.timeScale = 1f;
             }
         }
-
-
     }
 
     public void TakeDamage(float damage)

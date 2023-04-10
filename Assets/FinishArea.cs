@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class FinishArea : MonoBehaviour
 {
     [SerializeField] private GameObject finishScene;
-
+    private bool collided = false;
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player") && finishScene)
@@ -14,15 +14,17 @@ public class FinishArea : MonoBehaviour
             Time.timeScale = 0f;
             finishScene.SetActive(true);
             MoveImg();
+            collided = true;
         }
     }
 
     private void Update()
     {
-        if (finishScene != null && Input.GetMouseButtonDown(0))
+        if (collided && finishScene != null && Input.GetMouseButtonDown(0))
         {
             HideImgAndRestarGame();
             Time.timeScale = 1f;
+            collided = false;
         }
     }
 
