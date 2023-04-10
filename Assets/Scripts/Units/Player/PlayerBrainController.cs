@@ -29,11 +29,13 @@ public class PlayerBrainController : MonoBehaviour
             if (gameoverImg != null)
             {
                 gameoverImg.SetActive(true);
+                Time.timeScale = 0f;
             }
 
             if (gameoverImg != null && Input.GetMouseButtonDown(0))
             {
                 HideImgAndRestarGame();
+                Time.timeScale = 1f;
             }
         }
 

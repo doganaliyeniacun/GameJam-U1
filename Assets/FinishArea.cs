@@ -11,6 +11,7 @@ public class FinishArea : MonoBehaviour
     {
         if (other.CompareTag("Player") && finishScene)
         {
+            Time.timeScale = 0f;
             finishScene.SetActive(true);
             MoveImg();
         }
@@ -21,6 +22,7 @@ public class FinishArea : MonoBehaviour
         if (finishScene != null && Input.GetMouseButtonDown(0))
         {
             HideImgAndRestarGame();
+            Time.timeScale = 1f;
         }
     }
 
