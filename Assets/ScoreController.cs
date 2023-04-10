@@ -22,7 +22,7 @@ public class ScoreController : MonoBehaviour
 
     void Update()
     {
-        _text.text = ": " + count.ToString();
+        _text.text = "x " + count.ToString();
     }
 
     public void IncrementScore()
