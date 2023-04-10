@@ -472,3 +472,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   brainbarSprite: {fileID: 0}
   maxBrainHealth: 100
+  gameoverImg: {fileID: 8750028544835447583, guid: caee9f632967ca2438b14ba579eae75e, type: 3}

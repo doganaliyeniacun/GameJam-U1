@@ -22504,6 +22504,10 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 8512967073892094007, guid: 1b05211b1e613254392ac4525a175a1a, type: 3}
+      propertyPath: gameoverImg
+      value: 
+      objectReference: {fileID: 980473227}
+    - target: {fileID: 8512967073892094007, guid: 1b05211b1e613254392ac4525a175a1a, type: 3}
       propertyPath: brainbarSprite
       value: 
       objectReference: {fileID: 4459425984571349513}
@@ -72712,6 +72716,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: caee9f632967ca2438b14ba579eae75e, type: 3}
+--- !u!1 &980473227 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8750028544835447583, guid: caee9f632967ca2438b14ba579eae75e, type: 3}
+  m_PrefabInstance: {fileID: 980473226}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1044225974
 PrefabInstance:
   m_ObjectHideFlags: 0

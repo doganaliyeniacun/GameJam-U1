@@ -1,11 +1,13 @@
 using DG.Tweening;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayerBrainController : MonoBehaviour
 {
     [SerializeField] private Image brainbarSprite;
     [SerializeField] private float maxBrainHealth;
+    [SerializeField] private GameObject gameoverImg;
     private float currentBrainHealth;
 
     private void Awake()
@@ -22,8 +24,20 @@ public class PlayerBrainController : MonoBehaviour
     {
         if (0f >= currentBrainHealth)
         {
-            GameController.instance.RestartScene();
+            
+
+            if (gameoverImg != null)
+            {
+                gameoverImg.SetActive(true);
+            }
+
+            if (gameoverImg != null && Input.GetMouseButtonDown(0))
+            {
+                HideImgAndRestarGame();
+            }
         }
+
+
     }
 
     public void TakeDamage(float damage)
@@ -36,5 +50,17 @@ public class PlayerBrainController : MonoBehaviour
     private void UpdateBrainBar(float maxBrain, float currentBrain)
     {
         brainbarSprite.DOFillAmount(currentBrain / maxBrain, 1);
+    }
+
+    public void HideImgAndRestarGame()
+    {
+        gameoverImg.SetActive(false);
+        GameController.instance.RestartScene();
+    }
+
+    public void MoveImg()
+    {
+        Transform transformImg = gameoverImg.transform.GetChild(0).transform.GetChild(0).transform;
+        transformImg.DOMoveY(transformImg.position.y - 200, 60);
     }
 }
