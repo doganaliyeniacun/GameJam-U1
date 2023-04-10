@@ -22,8 +22,20 @@ Source: https://freesound.org/people/ProjectsU012/sounds/341695/
 
 ----------------------Sprites------------------------------------------------
 
-Ana karakter
+U1_Takım_Sprite klasöründe bulunan spriteların tamamı
 Artist : Takım üyesi, Berşan Şamlıoğlu
 
 ExportedIcons
 Source: https://penzilla.itch.io/handdrawn-vector-icon-pack
+
+
+Puzlle için kullandığımız background
+https://www.artstation.com/artwork/nBX59
+
+schoolgirl 
+https://shatteredreality.itch.io/schoolgirl-sidescroller-sprite
+
+
+----------------------Fonts----------------------------------------
+Eraser
+https://www.1001fonts.com/eraser-font.html
