@@ -101,8 +101,8 @@ MonoBehaviour:
   m_text: "\"Okuldaki \xF6\u011Frenciler resmen telefon ba\u011F\u0131ml\u0131s\u0131
     olmu\u015F, onlar\u0131 bu durumdan kurtarmak benim i\u015Fim. Bunu yapabilirim.\""
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 6d344f38a11d4de4facaefb3f5d02add, type: 2}
+  m_sharedMaterial: {fileID: -5089372089970929263, guid: 6d344f38a11d4de4facaefb3f5d02add, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
