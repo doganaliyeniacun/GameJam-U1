@@ -17,7 +17,7 @@ Source: https://freesound.org/people/ProjectsU012/sounds/341695/
 
 ## Sprite
 
-U1_Takım_Sprite klasöründe bulunan spriteların tamamı
+U1_Takım_Sprite klasöründe bulunan spriteların tamamı.
 Artist : Takım üyesi, Berşan Şamlıoğlu
 
 -ExportedIcons-
